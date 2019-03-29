@@ -70,7 +70,6 @@ var MovieList = React.createClass({
 
 var moviesElements = movies.map(function(movie) {
   return React.createElement('li', {key:movie.id},
-	  //React.createElement('li', {key: movie.id},
       React.createElement(MovieTitle, {movie:movie}),
 	  React.createElement(MovieDesc, {movie:movie}),
 	  React.createElement(MovieImage,{src:movie.image})
